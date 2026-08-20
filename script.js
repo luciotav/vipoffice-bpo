@@ -1,3 +1,20 @@
+(function capturarUtm() {
+  const params = new URLSearchParams(window.location.search);
+  const campos = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];
+  campos.forEach((campo) => {
+    const valorNaUrl = params.get(campo);
+    const input = document.getElementById(campo);
+    if (!input) return;
+    if (valorNaUrl) {
+      sessionStorage.setItem(campo, valorNaUrl);
+      input.value = valorNaUrl;
+    } else {
+      const valorSalvo = sessionStorage.getItem(campo);
+      if (valorSalvo) input.value = valorSalvo;
+    }
+  });
+})();
+
 const form = document.querySelector('#lead-form');
 
 form?.addEventListener('submit', () => {
