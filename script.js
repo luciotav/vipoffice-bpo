@@ -6,10 +6,15 @@
     const input = document.getElementById(campo);
     if (!input) return;
     if (valorNaUrl) {
-      sessionStorage.setItem(campo, valorNaUrl);
+      try {
+        sessionStorage.setItem(campo, valorNaUrl);
+      } catch (e) {}
       input.value = valorNaUrl;
     } else {
-      const valorSalvo = sessionStorage.getItem(campo);
+      let valorSalvo = null;
+      try {
+        valorSalvo = sessionStorage.getItem(campo);
+      } catch (e) {}
       if (valorSalvo) input.value = valorSalvo;
     }
   });
