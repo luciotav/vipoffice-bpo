@@ -68,10 +68,13 @@
 @media(max-width:760px){.hero-watermark{width:78vw;right:-18%;opacity:.07}}
 /* Logo branco sem caixa, como no site principal */
 .brand img,.footer-brand img{background:none;padding:0;width:auto;max-width:none}
-.brand img{height:96px}
+.brand img{height:124px;position:relative;z-index:3}
 .header{height:110px}
 .footer-brand img{height:46px}
 .hero-watermark{filter:none;opacity:.08}
 @media(max-width:760px){.brand img{height:58px}.footer-brand img{height:40px}}
 /* Logo mais à esquerda, sem sobrepor a faixa de infraestrutura */
 @media(min-width:761px){.header{padding-left:22px;padding-right:22px}}
+
+/* Logo pode extrapolar a barra do cabeçalho sem alterar a faixa */
+@media(min-width:761px){.header{overflow:visible}}
