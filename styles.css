@@ -66,3 +66,9 @@
 .hero-watermark{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:min(520px,62vw);height:auto;opacity:.09;pointer-events:none;z-index:0;filter:grayscale(1) brightness(2)}
 .hero-content{z-index:1}
 @media(max-width:760px){.hero-watermark{width:78vw;right:-18%;opacity:.07}}
+/* Logo branco sem caixa, como no site principal */
+.brand img,.footer-brand img{background:none;padding:0;width:auto;max-width:none}
+.brand img{height:58px}
+.footer-brand img{height:46px}
+.hero-watermark{filter:none;opacity:.08}
+@media(max-width:760px){.brand img{height:50px}.footer-brand img{height:40px}}
