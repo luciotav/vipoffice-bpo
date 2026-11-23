@@ -62,3 +62,7 @@
 .brand img,.footer-brand img{width:auto;height:64px;max-width:none;background:#fff;padding:5px;border-radius:4px;box-sizing:content-box}
 .footer-brand img{height:54px}
 @media(max-width:760px){.brand img{height:50px;width:auto}.footer-brand img{height:46px}}
+/* Marca d'água do logo no hero */
+.hero-watermark{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:min(520px,62vw);height:auto;opacity:.09;pointer-events:none;z-index:0;filter:grayscale(1) brightness(2)}
+.hero-content{z-index:1}
+@media(max-width:760px){.hero-watermark{width:78vw;right:-18%;opacity:.07}}
