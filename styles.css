@@ -68,7 +68,8 @@
 @media(max-width:760px){.hero-watermark{width:78vw;right:-18%;opacity:.07}}
 /* Logo branco sem caixa, como no site principal */
 .brand img,.footer-brand img{background:none;padding:0;width:auto;max-width:none}
-.brand img{height:72px}
+.brand img{height:96px}
+.header{height:110px}
 .footer-brand img{height:46px}
 .hero-watermark{filter:none;opacity:.08}
 @media(max-width:760px){.brand img{height:58px}.footer-brand img{height:40px}}
