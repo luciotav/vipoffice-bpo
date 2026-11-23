@@ -58,3 +58,7 @@
 .rooms-footer p{margin:0}
 @media(max-width:960px){.rooms-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.rooms{padding:65px 0}.rooms-grid{grid-template-columns:1fr}.room-photo{height:190px}}
+/* Logo novo (fundo branco): caixa branca no cabeçalho e rodapé */
+.brand img,.footer-brand img{width:auto;height:64px;max-width:none;background:#fff;padding:5px;border-radius:4px;box-sizing:content-box}
+.footer-brand img{height:54px}
+@media(max-width:760px){.brand img{height:50px;width:auto}.footer-brand img{height:46px}}
